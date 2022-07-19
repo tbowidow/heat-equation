@@ -1,0 +1,19 @@
+u(t,x,y) = sin(pi*t+0.25)*sin(pi*x+0.5)*sin(pi*y+0.75)
+
+u_t = pi*cos(pi*t+0.25)*sin(pi*x+0.5)*sin(pi*y+0.75)
+
+u_x = pi*sin(pi*t+0.25)*cos(pi*x+0.5)*sin(pi*y+0.75)
+u_xx = -(pi**2)*sin(pi*t+0.25)*sin(pi*x+0.5)*sin(pi*y+0.75)
+
+u_y = pi*sin(pi*t+0.25)*sin(pi*x+0.5)*cos(pi*y+0.75)
+u_yy = -(pi**2)*sin(pi*t+0.25)*sin(pi*x+0.5)*sin(pi*y+0.75)
+
+f(t,x,y) = u_t - u_xx - u_yy
+	 = pi*cos(pi*t+0.25)*sin(pi*x+0.5)*sin(pi*y+0.75)
+	 - (-(pi**2)*sin(pi*t+0.25)*sin(pi*x+0.5)*sin(pi*y+0.75))
+	 - (-(pi**2)*sin(pi*t+0.25)*sin(pi*x+0.5)*sin(pi*y+0.75))
+	 
+	 = pi*cos(pi*t+0.25)*sin(pi*x+0.5)*sin(pi*y+0.75)
+	 + 2*(pi**2)*sin(pi*t+0.25)*sin(pi*x+0.5)*sin(pi*y+0.75))
+	 
+	 A, b, 

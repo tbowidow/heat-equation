@@ -1,0 +1,164 @@
+Wheeler Portable Batch System Prologue
+Job Id: 1729286.wheeler-sn.alliance.unm.edu
+Username: mcadams
+Job 1729286.wheeler-sn.alliance.unm.edu running on nodes:
+wheeler084 wheeler079 wheeler078 wheeler071 wheeler047 wheeler046 wheeler044 wheeler043 
+
+prologue running on host: wheeler084
+2 Threads
+Nt, N, Error is:  1024,  512,  3.75188970759988e-08
+
+real	13m40.871s
+user	26m34.499s
+sys	0m28.299s
+Nt, N, Error is:  1024,  512,  3.75188970759988e-08
+
+real	13m34.633s
+user	26m33.896s
+sys	0m28.922s
+Nt, N, Error is:  1024,  512,  3.75188970759988e-08
+
+real	13m37.868s
+user	26m40.458s
+sys	0m28.890s
+Nt, N, Error is:  1024,  512,  3.75188970759988e-08
+
+real	13m34.257s
+user	26m35.491s
+sys	0m26.322s
+Nt, N, Error is:  1024,  512,  3.75188970759988e-08
+
+real	13m34.921s
+user	26m33.695s
+sys	0m29.405s
+4 Threads
+Nt, N, Error is:  1024,  512,  3.751889707782219e-08
+
+real	9m10.667s
+user	35m54.701s
+sys	0m37.684s
+Nt, N, Error is:  1024,  512,  3.751889707782219e-08
+
+real	9m13.007s
+user	36m1.357s
+sys	0m37.913s
+Nt, N, Error is:  1024,  512,  3.751889707782219e-08
+
+real	9m13.560s
+user	36m3.932s
+sys	0m37.919s
+Nt, N, Error is:  1024,  512,  3.751889707782219e-08
+
+real	9m12.500s
+user	35m59.118s
+sys	0m38.726s
+Nt, N, Error is:  1024,  512,  3.751889707782219e-08
+
+real	9m13.393s
+user	36m3.109s
+sys	0m37.764s
+8 Threads
+Nt, N, Error is:  1024,  512,  3.751889707961891e-08
+
+real	8m3.246s
+user	63m13.245s
+sys	0m46.745s
+Nt, N, Error is:  1024,  512,  3.751889707961891e-08
+
+real	8m8.931s
+user	63m55.614s
+sys	0m49.263s
+Nt, N, Error is:  1024,  512,  3.751889707961891e-08
+
+real	8m3.944s
+user	63m19.679s
+sys	0m46.481s
+Nt, N, Error is:  1024,  512,  3.751889707961891e-08
+
+real	8m3.619s
+user	63m15.545s
+sys	0m46.959s
+Nt, N, Error is:  1024,  512,  3.751889707961891e-08
+
+real	8m3.303s
+user	63m11.321s
+sys	0m46.425s
+16 Threads
+Nt, N, Error is:  1024,  512,  3.751889707921126e-08
+
+real	5m2.202s
+user	37m51.874s
+sys	1m41.595s
+Nt, N, Error is:  1024,  512,  3.751889707921126e-08
+
+real	4m58.055s
+user	37m39.478s
+sys	1m38.767s
+Nt, N, Error is:  1024,  512,  3.751889707921126e-08
+
+real	5m0.343s
+user	38m7.009s
+sys	1m35.962s
+Nt, N, Error is:  1024,  512,  3.751889707921126e-08
+
+real	5m6.770s
+user	38m25.763s
+sys	1m42.137s
+Nt, N, Error is:  1024,  512,  3.751889707921126e-08
+
+real	4m58.233s
+user	37m39.607s
+sys	1m30.880s
+32 Threads
+Nt, N, Error is:  1024,  512,  3.7518897079489804e-08
+
+real	4m16.343s
+user	31m40.709s
+sys	1m49.170s
+Nt, N, Error is:  1024,  512,  3.7518897079489804e-08
+
+real	4m9.767s
+user	31m12.094s
+sys	1m45.637s
+Nt, N, Error is:  1024,  512,  3.7518897079489804e-08
+
+real	4m17.789s
+user	31m39.827s
+sys	1m47.652s
+Nt, N, Error is:  1024,  512,  3.7518897079489804e-08
+
+real	4m16.939s
+user	31m27.925s
+sys	1m49.947s
+Nt, N, Error is:  1024,  512,  3.7518897079489804e-08
+
+real	4m17.122s
+user	31m47.536s
+sys	1m47.679s
+64 Threads
+Nt, N, Error is:  1024,  512,  3.751889707952241e-08
+
+real	4m54.869s
+user	33m36.822s
+sys	2m2.929s
+Nt, N, Error is:  1024,  512,  3.751889707952241e-08
+
+real	4m32.365s
+user	33m41.242s
+sys	1m59.262s
+Nt, N, Error is:  1024,  512,  3.751889707952241e-08
+
+real	4m30.190s
+user	33m20.528s
+sys	1m59.646s
+Nt, N, Error is:  1024,  512,  3.751889707952241e-08
+
+real	4m30.965s
+user	33m31.569s
+sys	1m59.321s
+Nt, N, Error is:  1024,  512,  3.751889707952241e-08
+
+real	4m34.422s
+user	33m54.502s
+sys	2m3.365s
+Wheeler Portable Batch System Epilogue
