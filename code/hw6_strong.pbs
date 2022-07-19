@@ -1,0 +1,108 @@
+#!/bin/bash
+
+########################################################################
+# PBS directives, ie arguments to qsub. Learn more by running "man qsub"  
+########################################################################
+
+## This requests 1 node, and 8 cores, which is perfect our our thread-level programming
+#PBS -lnodes=8:ppn=8
+
+## This is the max run-time allowed  hr:min:sec
+#PBS -l walltime=04:15:00 
+
+## The debug queue will likely be faster, but if your code takes more than 5 or
+## 10 minutes, switch "debug" to "default"
+#PBS -q default
+
+## This is the filename for all printed output from your code
+#PBS -N hw6_strong_output
+
+## This line ensures the script runs in Bash
+#PBS -S /bin/bash
+
+## Send mail when the script aborts "a" and ends "e" to your email address
+#PBS -m bae
+#PBS -M tbowidow@unm.edu 
+
+## This line joins the output and error to print to the same file
+#PBS -j oe
+
+########################################################################
+########################################################################
+
+
+########################################################################
+# Load MPI and your custom Conda environment
+########################################################################
+#    To create your Conda environment for this class, you can do...
+#    $ module load miniconda<tab to complete version>  
+#    $ conda create --name wheeler_mpi_py3_2021 python=3 numpy mpi mpi4py scipy ipython matplotlib
+#      < press y to accept installation of all new packages and the many dependencies > 
+
+#
+# ==> You will need to change "source activate ..." to use your anaconda module name
+module load miniconda3-4.7.12.1-gcc-4.8.5-lmtvtik
+source activate wheeler_mpi_py3_2021 
+########################################################################
+########################################################################
+
+
+########################################################################
+# Now, change directory into the batch system's preferred scratch directory
+# (don't worry about this now)
+########################################################################
+# Change to the directory where you submitted this script and typed qsub 
+cd $PBS_O_WORKDIR
+########################################################################
+########################################################################
+
+
+
+########################################################################
+# Now, run your program.
+########################################################################
+echo "2 Threads"
+time mpirun -machinefile $PBS_NODEFILE -np 2 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 2 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 2 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 2 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 2 python code/hw6_parallelstrong.py
+
+echo "4 Threads"
+time mpirun -machinefile $PBS_NODEFILE -np 4 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 4 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 4 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 4 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 4 python code/hw6_parallelstrong.py
+
+echo "8 Threads"
+time mpirun -machinefile $PBS_NODEFILE -np 8 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 8 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 8 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 8 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 8 python code/hw6_parallelstrong.py
+
+echo "16 Threads"
+time mpirun -machinefile $PBS_NODEFILE -np 16 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 16 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 16 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 16 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 16 python code/hw6_parallelstrong.py
+
+echo "32 Threads"
+time mpirun -machinefile $PBS_NODEFILE -np 32 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 32 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 32 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 32 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 32 python code/hw6_parallelstrong.py
+
+echo "64 Threads"
+time mpirun -machinefile $PBS_NODEFILE -np 64 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 64 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 64 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 64 python code/hw6_parallelstrong.py
+time mpirun -machinefile $PBS_NODEFILE -np 64 python code/hw6_parallelstrong.py
+
+########################################################################
+########################################################################
+
